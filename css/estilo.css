@@ -1,4 +1,59 @@
-.colorAzul {
-  color: blue;
-  font-size: 20px;
-  font-weight: bold; }
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 29px; }
+
+h2 {
+  color: black;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px; }
+
+p {
+  color: black; }
+
+#camisetas {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  align-items: center;
+  margin-left: 250px;
+  margin-top: 80px; }
+
+#tabla {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
+  margin: 100px; }
+
+#preciototal {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px; }
+
+#total {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px; }
+
+#botones {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive; }
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 10px; }
+
+#insta {
+  height: 60px;
+  width: 60px; }
+
+#face {
+  height: 60px;
+  width: 60px; }
+
+#twit {
+  height: 60px;
+  width: 60px; }
+
+#wp {
+  height: 60px;
+  width: 60px; }

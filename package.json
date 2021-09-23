@@ -14,5 +14,13 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nahu93/Camisetas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nahu93/Camisetas/issues"
+  },
+  "homepage": "https://github.com/nahu93/Camisetas#readme",
   "description": ""
 }
