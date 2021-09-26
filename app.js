@@ -75,14 +75,14 @@ console.log(Productos)
 
 //////utilizando inner///////
 
-/*Productos.forEach (e => {
+Productos.forEach (e => {
 
 selectorItems.innerHTML += `
  <div class="card col-12 col-md-4" style="width: 18rem;">
   <img src="${e.img}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">${e.equipo}</h5>
-    <h6 class="card-text">$ ${e.precio}</h6>
+    <h6 class="card-text">$${e.precio}</h6>
     
     <a href="#" class="btn btn-dark"  onclick="agregarCarrito(${e.id})">AGREGAR</a>
   </div>
@@ -90,6 +90,8 @@ selectorItems.innerHTML += `
  `
    
 })
+
+
 const agregarCarrito = (idPorOnClick) => {
 
     const objetoIdentificado = Productos.find(e => e.id == idPorOnClick)
@@ -112,53 +114,6 @@ else {
  }
 
 }
-
-*/
-Productos.forEach (e => {
-
-    let camisetas = document.createElement ("div")
-    camisetas.setAttribute = ("class","card" )
-    camisetas.setAttribute = ("class","col-12")
-    camisetas.setAttribute = ("class","col-md-4")
-    camisetas.setAttribute = ("style" , "width: 18rem")
-
-    let imagen = document.createElement ("img")
-    imagen.setAttribute = ("class", "card-img-top")
-    imagen.setAttribute = ("src", `(${e.img})`)
-    camisetas.appendChild (imagen)
-
-    let cardBody = document.createElement ("div")
-    cardBody.setAttribute = ("class ", "card-body")
-    camisetas.appendChild (cardBody)
-
-    let equipo = document.createElement ("h5")
-    equipo.setAttribute = ("class", "card-title")
-    equipo.textContent = `${e.equipo}`
-    cardBody.appendChild (equipo)
-
-    let precio = document.createElement ("h6")
-    precio.setAttribute = ("class", "card-text")
-    precio.textContent = `${e.precio}`
-    cardBody.appendChild (precio)
-    
-    
-    let button = document.createElement ("button")
-    button.setAttribute ("class","btn btn-dark")
-    button.setAttribute ("id",`${e.id}`)
-    button.setAttribute("onclick",`(${e.id})`)
-    button.textContent = "Comprar"
-    camisetas.appendChild (button)
-
-    selectorItems.appendChild(camisetas)
-
-    button.addEventListener ('click',() => {
-
-        addCarrito(e)
-
-    })
-       
-    })
-
 
 /////////////// tabla////////////////////////////////
 
